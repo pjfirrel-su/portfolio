@@ -1,0 +1,7 @@
+@use "../abstracts/vars";
+
+body {
+    background-color: vars.$color__secondary;
+    font-family: vars.$font__primary;
+    color: white;
+}

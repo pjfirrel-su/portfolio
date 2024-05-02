@@ -1,0 +1,23 @@
+@use "../../sass/abstracts/mixins";
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 98vh;
+    &__branding {
+        &__wordmark {
+            width: 100%;
+            height: auto;
+            padding-top: 1rem;
+     }
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__links {
+        text-decoration: none;
+    }
+    @include mixins.generateMargins();
+    @include mixins.generatePaddingClasses();
+}

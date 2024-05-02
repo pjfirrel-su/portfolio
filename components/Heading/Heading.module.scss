@@ -1,0 +1,23 @@
+@use "../../sass/abstracts/mixins";
+@use "../../sass/abstracts/vars";
+
+.heading {
+    margin: 0;
+    padding: 0;
+    font-family: vars.$font__primary;
+    color: white;
+    &--1 {
+        font-size: 1.75rem;
+        font-weight: normal;
+    }
+    &--2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    &--3 {
+        font-size: 1.25rem;
+        font-weight: normal;
+        padding-top: 0.4rem;
+    }
+    @include mixins.generateMargins();
+}

@@ -1,0 +1,13 @@
+@use "../../sass/abstracts/mixins";
+@use "../../sass/abstracts/vars";
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: vars.$color__secondary;
+
+    @include mixins.generateJustifyContentsClasses();
+    @include mixins.generateAlignItemsClasses();
+    @include mixins.generatePaddingClasses();
+    @include mixins.generateGaps();
+}

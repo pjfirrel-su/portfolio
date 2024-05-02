@@ -1,0 +1,20 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__slide {
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 5/3;
+        width: 100%;
+        &__img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.carousel {
+    height: 100vh;
+    padding-top: 20vh; //do the math
+    padding-bottom:50vh;
+}

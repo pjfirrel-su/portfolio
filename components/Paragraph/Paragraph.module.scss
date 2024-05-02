@@ -1,0 +1,12 @@
+@use "../../sass/abstracts/mixins";
+@use "../../sass/abstracts/vars";
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    &.italic {
+        font-family: vars.$font__primary;
+        font-style: italic;
+    }
+    @include mixins.generateMargins();
+}

@@ -1,0 +1,7 @@
+@use "../../sass/abstracts/mixins";
+
+.col {
+  width: 100%;
+  @include mixins.generateColClasses();
+  @include mixins.generatePaddingClasses();
+}
