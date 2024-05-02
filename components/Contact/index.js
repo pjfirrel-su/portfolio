@@ -15,7 +15,7 @@ const Contact = () => {
                 <Row paddingTop={3}>
                     <Paragraph className={styles.paragraph}>
                         If you have an internship opportunity or freelance project and are interested in my work, please reach out to me at <a className={styles.links} href="mailto:pjfirrel@syr.edu">pjfirrel@syr.edu</a>.
-                        If you don't have any projects but just want to talk about UX, video games, or hip-hop, feel free to reach out to me on Twitter at <a className={styles.links} href="https://twitter.com/patrick_firrell">@patrick_firrell</a>. 
+                        If you do not have any projects but just want to talk about UX, video games, or hip-hop, feel free to reach out to me on Twitter at <a className={styles.links} href="https://twitter.com/patrick_firrell">@patrick_firrell</a>. 
                     </Paragraph>
                 </Row>
             </Col>
