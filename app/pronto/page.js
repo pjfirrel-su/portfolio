@@ -55,7 +55,7 @@ const Pronto = () => {
               </Col>
               <Col sm={8}>
                 <Image
-                  src="/summit_bold_sketch.png"
+                  src="/pronto_sketch.png"
                   alt="Screenshot from Glyphs software with the word 'Bold'"
                   height={300}
                   width={500}
@@ -71,7 +71,7 @@ const Pronto = () => {
               </Col>
               <Col sm={8}>
                 <Image
-                  src="/summit_bold_sketch.png"
+                  src="/pronto_logo.png"
                   alt="Screenshot from Glyphs software with the word 'Bold'"
                   height={300}
                   width={500}
@@ -87,7 +87,7 @@ const Pronto = () => {
               </Col>
               <Col sm={8}>
                 <Image
-                  src="/summit_bold_sketch.png"
+                  src="/pronto_sd.png"
                   alt="Screenshot from Glyphs software with the word 'Bold'"
                   height={300}
                   width={500}
@@ -98,7 +98,24 @@ const Pronto = () => {
             <Paragraph>
                 The most rewarding parts of the project were designing and assembling the packaging. As a UI/UX designer, I work almost exclusively with digital designs, so fighting with the lab printers was a frustrating experience, but seeing the final box assembled was incredibly gratifying. Now I just need to figure out how to achieve those upload speeds... 
             </Paragraph>
+            <Heading level={1} marginTop={3} marginBottom={0}></Heading>
+            <Image 
+                src="/pronto_packaging.png"
+                alt="Screenshot from Glyphs software with the word 'Bold'"
+                height={300}
+                width={500}
+                className={imageStyles.responsive__image}
+            />
+            <Heading level={1} marginTop={3} marginBottom={0}></Heading>
+            <Image 
+                src="/pronto_assembled.png"
+                alt="Screenshot from Glyphs software with the word 'Bold'"
+                height={300}
+                width={500}
+                className={imageStyles.responsive__image}
+            />
             <Heading level={1} marginTop={10} marginBottom={10}></Heading>
+
           </Col>
         </Row>
       </Container>

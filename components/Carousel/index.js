@@ -46,7 +46,7 @@ const Carousel = ({label}) => {
                     <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/video-game-ui">
                             <Image 
-                                src="/summit_bold_sketch.png"
+                                src="/passion_thumbnail.png"
                                 alt="demo image"
                                 height={300}
                                 width={500}
@@ -54,7 +54,7 @@ const Carousel = ({label}) => {
                             />
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide className={styles.swiper__slide}>
+                    {/* <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/the-outlet">
                             <Image 
                                 src="wordmark.svg"
@@ -75,11 +75,11 @@ const Carousel = ({label}) => {
                                 className={styles.swiper__slide__img}
                             />
                         </Link>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/pronto">
                             <Image 
-                                src="wordmark.svg"
+                                src="/pronto_thumbnail.png"
                                 alt="demo image"
                                 height={200}
                                 width={200}
@@ -87,10 +87,10 @@ const Carousel = ({label}) => {
                             />
                         </Link>
                     </SwiperSlide>
-                    <SwiperSlide className={styles.swiper__slide}>
+                    {/* <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/grocery-ux">
                             <Image 
-                                src="wordmark.svg"
+                                src="/wordmark.svg"
                                 alt="demo image"
                                 height={200}
                                 width={200}
@@ -101,18 +101,18 @@ const Carousel = ({label}) => {
                     <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/interactive-type-specimen">
                             <Image 
-                                src="wordmark.svg"
+                                src="/wordmark.svg"
                                 alt="demo image"
                                 height={200}
                                 width={200}
                                 className={styles.swiper__slide__img}
                             />
                         </Link>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide className={styles.swiper__slide}>
                         <Link href="/personal-brand">
                             <Image 
-                                src="wordmark.svg"
+                                src="/personal_thumbnail.png"
                                 alt="demo image"
                                 height={200}
                                 width={200}
