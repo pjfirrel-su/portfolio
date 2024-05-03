@@ -1,8 +1,8 @@
 import "../sass/global.scss";
 
 export const metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio site for VIS 327",
+  title: "Patrick Firrell - Portfolio",
+  description: "Personal portfolio site for Patrick Firrell",
 };
 
 export default function RootLayout({ children }) {

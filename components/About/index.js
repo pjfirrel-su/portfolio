@@ -11,7 +11,7 @@ const About = () => {
         <section className={styles.about}>
             <Row>
                 <Heading level={1}>
-                    &lt;About&gt;
+                    &lt;about&gt;
                 </Heading>
                 <Row paddingTop={3}>
                     <Col sm={6} md={4} lg={4}>

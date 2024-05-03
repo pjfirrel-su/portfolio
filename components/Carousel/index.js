@@ -5,23 +5,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import styles from "./Carousel.module.scss";
 
 import Heading from "../Heading";
 import Image from "next/image";
+import Link from "next/link";
 
 const Carousel = ({label}) => {
 
     return (
         <section className={styles.carousel}>
-            <Heading level={1}>&lt;Work&gt;</Heading>
+            <Heading level={1}>&lt;work&gt;</Heading>
             <div>
                 <Swiper
+                    style={{
+                        "--swiper-pagination-color": "#3FA9F5",
+                        "--swiper-pagination-bullet-inactive-color": "#999999",
+                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                        "--swiper-navigation-color": "#3FA9F5",
+                    }}
                     effect={'coverflow'}
-                    grabCursor={true}
                     centeredSlides={true}
                     slidesPerView={'auto'}
                     coverflowEffect={{
@@ -32,89 +39,86 @@ const Carousel = ({label}) => {
                         slideShadows: true,
                     }}
                     pagination={true}
-                    modules={[EffectCoverflow, Pagination]}
+                    navigation={true}
+                    modules={[EffectCoverflow, Pagination, Navigation]}
                     className={styles.swiper}
                 >
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/video-game-ui">
+                            <Image 
+                                src="/summit_bold_sketch.png"
+                                alt="demo image"
+                                height={300}
+                                width={500}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/the-outlet">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/summit-typeface">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/pronto">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/grocery-ux">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/interactive-type-specimen">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide className={styles.swiper__slide}>
-                        <Image 
-                            src="wordmark.svg"
-                            alt="demo image"
-                            height={200}
-                            width={200}
-                            className={styles.swiper__slide__img}
-                        />
+                        <Link href="/personal-brand">
+                            <Image 
+                                src="wordmark.svg"
+                                alt="demo image"
+                                height={200}
+                                width={200}
+                                className={styles.swiper__slide__img}
+                            />
+                        </Link>
                     </SwiperSlide>
                 </Swiper>
             </div>

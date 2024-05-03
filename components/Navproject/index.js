@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "./Nav.module.scss";
+import styles from "./Navproject.module.scss";
 
 // import Col from "../Col";
 import Heading from "../Heading";
@@ -38,19 +38,19 @@ const Nav = () => {
             <div>
                 <ul className={styles.nav__list}>
                     <li>
-                        <a className={styles.nav__links} href="#work" onClick={handleScroll}>
+                        <Link className={styles.nav__links} href="/">
                             <Heading level={3}>&lt;work&gt;</Heading>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className={styles.nav__links} href="#about" onClick={handleScroll}>
+                        <Link className={styles.nav__links} href="/">
                             <Heading level={3}>&lt;about&gt;</Heading>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className={styles.nav__links} href="#contact" onClick={handleScroll}>
+                        <Link className={styles.nav__links} href="/" onClick={handleScroll}>
                             <Heading level={3}>&lt;contact&gt;</Heading>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

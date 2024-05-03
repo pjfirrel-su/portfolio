@@ -1,7 +1,9 @@
-.contact {
+@use "../../sass/abstracts/vars";
 
+.contact {
     height: 80vh;
 }
 .links {
-    color: white;
+    color: vars.$color__primary;
+    text-decoration: none;
 }

@@ -10,7 +10,7 @@ const Contact = () => {
         <section className={styles.contact}>
             <Col>
                 <Heading level={1} className={styles.title}>
-                    &lt;Contact&gt;
+                    &lt;contact&gt;
                 </Heading>
                 <Row paddingTop={3}>
                     <Paragraph className={styles.paragraph}>

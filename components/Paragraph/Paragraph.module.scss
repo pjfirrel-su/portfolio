@@ -2,8 +2,8 @@
 @use "../../sass/abstracts/vars";
 
 .paragraph {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: .9rem;
+    line-height: 1.4rem;
     &.italic {
         font-family: vars.$font__primary;
         font-style: italic;
