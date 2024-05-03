@@ -1,7 +1,16 @@
+@use "../../sass/abstracts/mixins";
+
 .about {
-    padding-bottom: 50vh;
-    height: 80vh;
+    padding-bottom: 5rem;
+    // background-color: pink;
+    @include mixins.breakpoint(laptop) {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    };
 }
-.headhot {
-    padding-bottom: 20rem;
+.headshot {
+    margin-bottom: 3rem;
+    width: 100%;
+    height: auto;
 }

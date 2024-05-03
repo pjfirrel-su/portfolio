@@ -16,10 +16,10 @@ const Heading = ({
     const headingClasses = cx({
         heading: true,
         [`heading--${level}`] : level,
-        [`margin-bottom--${marginTop}`]: marginTop,
-        [`margin-bottom--${marginRight}`]: marginRight,
+        [`margin-top--${marginTop}`]: marginTop,
+        [`margin-right--${marginRight}`]: marginRight,
         [`margin-bottom--${marginBottom}`]: marginBottom,
-        [`margin-bottom--${marginLeft}`]: marginLeft,
+        [`margin-left--${marginLeft}`]: marginLeft,
     });
 
     return (

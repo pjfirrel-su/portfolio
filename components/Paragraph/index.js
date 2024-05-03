@@ -16,10 +16,10 @@ const Paragraph = ({
         paragraph: true,
         intro: intro,
         caption: caption,
-        [`margin-bottom--${marginTop}`]: marginTop,
-        [`margin-bottom--${marginRight}`]: marginRight,
+        [`margin-top--${marginTop}`]: marginTop,
+        [`margin-right--${marginRight}`]: marginRight,
         [`margin-bottom--${marginBottom}`]: marginBottom,
-        [`margin-bottom--${marginLeft}`]: marginLeft,
+        [`margin-left--${marginLeft}`]: marginLeft,
     });
 
     return (

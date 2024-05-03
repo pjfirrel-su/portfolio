@@ -2,15 +2,20 @@
 @use "../../sass/abstracts/vars";
 
 .nav {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 98vh;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    display: none;
+    @include mixins.breakpoint(laptop) {
+        display: flex;
+    };
     &__branding {
         &__wordmark {
             width: 100%;
             height: auto;
-            padding-top: 1rem;
      }
     }
     &__list {
@@ -25,4 +30,8 @@
     }
     @include mixins.generateMargins();
     @include mixins.generatePaddingClasses();
+}
+.socialList {
+    display: flex;
+    gap: 1rem;
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "./Nav.module.scss";
 
-// import Col from "../Col";
+import Col from "../Col";
 import Heading from "../Heading";
 import Image from "next/image";
 import Link from "next/link"
@@ -56,25 +56,33 @@ const Nav = () => {
             </div>
             <footer className={styles.nav__footer}>
                 <Row gap={1}>
-                    <a href="https://www.behance.net/patrickfirrell">
-                        <Image 
-                        src="behance_logo.svg"
-                        alt="Behance Logo"
-                        width={35}
-                        height={35}
-                        />
-                    </a>
-                    <a href="https://www.linkedin.com/in/pfirrell/">
-                        <Image 
-                        src="linkedin_logo.svg"
-                        alt="Behance Logo"
-                        width={35}
-                        height={35} 
-                        />
-                    </a>
+                    <Col>
+                        <ul class={styles.socialList}>
+                            <li>
+                                <a href="https://www.behance.net/patrickfirrell">
+                                    <Image 
+                                    src="behance_logo.svg"
+                                    alt="Behance Logo"
+                                    width={35}
+                                    height={35}
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/pfirrell/">
+                                    <Image 
+                                    src="linkedin_logo.svg"
+                                    alt="Behance Logo"
+                                    width={35}
+                                    height={35} 
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </Col>
+                    
                 </Row>
             </footer>
-        
         </nav>
     )
 };

@@ -1,7 +1,15 @@
 @use "../../sass/abstracts/vars";
+@use "../../sass/abstracts/mixins";
 
 .contact {
-    height: 80vh;
+    padding-top: 5rem;
+    // background-color: limegreen;
+    padding-bottom: 20vh;
+    @include mixins.breakpoint(laptop) {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    };
 }
 .links {
     color: vars.$color__primary;

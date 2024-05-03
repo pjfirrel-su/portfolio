@@ -4,7 +4,7 @@ import styles from "./Col.module.scss";
 
 const cx = classnames.bind(styles);
 
-const Col = ({ children, xs, sm, md, lg, xl, paddingLeft, paddingRight}) => {
+const Col = ({ children, xs, sm, md, lg, xl, paddingLeft, paddingRight, paddingBottom, paddingTop, alignItems}) => {
   const colClasses = cx({
     col: true,
     [`col__xs__${xs}`]: xs,
@@ -14,6 +14,10 @@ const Col = ({ children, xs, sm, md, lg, xl, paddingLeft, paddingRight}) => {
     [`col__lg__${xl}`]: xl,
     [`padding-left-${paddingLeft}`]: paddingLeft,
     [`padding-right-${paddingRight}`]: paddingRight,
+    [`padding-bottom-${paddingBottom}`]: paddingBottom,
+    [`padding-top-${paddingTop}`]: paddingTop,
+    [`align-items-${alignItems}`]: alignItems,
+
   });
   return <div className={colClasses}>{children}</div>;
 };

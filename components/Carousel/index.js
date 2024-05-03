@@ -19,8 +19,8 @@ const Carousel = ({label}) => {
 
     return (
         <section className={styles.carousel}>
-            <Heading level={1}>&lt;work&gt;</Heading>
             <div>
+                <Heading level={1}>&lt;work&gt;</Heading>
                 <Swiper
                     style={{
                         "--swiper-pagination-color": "#3FA9F5",
