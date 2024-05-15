@@ -13,27 +13,20 @@ import Carousel from "../components/Carousel";
 import Col from "../components/Col";
 import Contact from "../components/Contact";
 import Container from "../components/Container";
+import Header from "../components/Header";
+import MobileHeader from "../components/MobileHeader";
 import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 import Row from "../components/Row";
 import Sticky from '../components/Sticky';
 
 const Homepage = () => {
-  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
 
   return (
     <Container max>
+      <MobileHeader />
       <Row justifyContent="flex-start">
         <Col md={3} paddingLeft={1}>
-          <ButtonUI 
-            icon="bars"
-            clickHandler={() => {
-              setIsMobileNavVisible(true);
-            }}
-          />
-          {isMobileNavVisible && <MobileNav closeHandler={() => {
-            setIsMobileNavVisible(false);
-          }}/>}
           <Sticky>
             <Nav />
           </Sticky>

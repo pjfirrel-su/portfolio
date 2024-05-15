@@ -5,19 +5,7 @@ import Image from "next/image";
 import Row from "../Row";
 
 
-import styles from "./MobileNav.module.scss";
-
-const handleScroll = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-        targetElement.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-}
+import styles from "./MobileNavProject.module.scss";
 
 const MobileNav = ({ closeHandler }) => {
     return (
@@ -38,17 +26,17 @@ const MobileNav = ({ closeHandler }) => {
             <div>
                 <ul className={styles.mobileNav__list}>
                     <li>
-                        <a className={styles.mobileNav__links} href="#work" onClick={handleScroll}>
+                        <a className={styles.mobileNav__links} href="/">
                             <Heading level={3}>&lt;work&gt;</Heading>
                         </a>
                     </li>
                     <li>
-                        <a className={styles.mobileNav__links} href="#about" onClick={handleScroll}>
+                        <a className={styles.mobileNav__links} href="/">
                             <Heading level={3}>&lt;about&gt;</Heading>
                         </a>
                     </li>
                     <li>
-                        <a className={styles.mobileNav__links} href="#contact" onClick={handleScroll}>
+                        <a className={styles.mobileNav__links} href="/">
                             <Heading level={3}>&lt;contact&gt;</Heading>
                         </a>
                     </li>

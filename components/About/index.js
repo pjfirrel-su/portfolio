@@ -33,6 +33,25 @@ const About = () => {
                             </Paragraph>
                         </Col>
                     </Row>
+                    <Heading level={3} marginTop="3">
+                        &lt;skills&gt;
+                    </Heading>
+                    <Paragraph marginTop="1">
+                        <b>Design:</b> Figma, Illustrator, Photoshop, InDesign, XD, Premiere Pro, After Effects
+                    </Paragraph>
+                    <Paragraph marginTop="1">
+                        <b>Development:</b> HTML, CSS, JavaScript, React.js, Next.js, WordPress
+                    </Paragraph>
+                    <Paragraph marginTop="3">
+                        <a
+                            href="/Firrell_Resume_April_2024.pdf"
+                            download
+                            className={styles.about__link}
+                        >
+                            &lt;download resume&gt;
+                        </a>
+                    </Paragraph>
+
                 </Col>
             </Row>
         </section>

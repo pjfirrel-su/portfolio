@@ -1,9 +1,44 @@
+@use "../../sass/abstracts/vars";
+@use "../../sass/abstracts/mixins";
+
 .mobileNav {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
     height: 100vh;
-    background-color: #ffc0cb;
+    background-color: vars.$color__secondary;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    @include mixins.breakpoint(laptop) {
+        display: none;
+    };
+    &__branding {
+        &__wordmark {
+            max-width: 40vw;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        :hover {
+            color: vars.$color__primary;
+            transition: color .3s;
+        }
+    }
+    &__links {
+        text-decoration: none;
+    }
+    @include mixins.generateMargins();
+    @include mixins.generatePaddingClasses();
+}
+.socialList {
+    display: flex;
+    gap: 1rem;
 }

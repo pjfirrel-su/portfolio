@@ -1,0 +1,15 @@
+@use "../../sass/abstracts/mixins";
+
+.header {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    @include mixins.breakpoint(laptop) {
+        display: none;
+    };
+    &__wordmark {
+        width: 40vw;
+        height: auto;
+    }
+}

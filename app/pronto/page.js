@@ -12,6 +12,7 @@ import Col from "../../components/Col";
 import Container from "../../components/Container";
 import Heading from "../../components/Heading";
 import MobileNav from "../../components/MobileNav";
+import MobileHeaderProject from "../../components/MobileHeaderProject";
 import Navproject from "../../components/Navproject";
 import Paragraph from "../../components/Paragraph";
 import Row from "../../components/Row";
@@ -20,27 +21,18 @@ import Sticky from '../../components/Sticky';
 import imageStyles from "../../sass/components/image.module.scss";
 
 const Pronto = () => {
-  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
 
   return (
     <main>
       <Container max>
+        <MobileHeaderProject />
         <Row justifyContent="flex-start">
-          <Col sm={4} md={3} paddingLeft={1}>
-            <ButtonUI 
-              icon="bars"
-              clickHandler={() => {
-                setIsMobileNavVisible(true);
-              }}
-            />
-            {isMobileNavVisible && <MobileNav closeHandler={() => {
-              setIsMobileNavVisible(false);
-            }}/>}
+          <Col sm={0} md={3} paddingLeft={1}>
             <Sticky>
               <Navproject />
             </Sticky>
           </Col>
-          <Col sm={8} md={9} paddingLeft={6} paddingRight={6}>
+          <Col sm={12} md={9} paddingLeft={6} paddingRight={6}>
             <Heading level={1} marginTop={7} marginBottom={3}>
               &lt;pronto&gt;
             </Heading>

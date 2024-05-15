@@ -29,7 +29,7 @@ const PersonalBrand = () => {
     <main>
       <Container max>
         <Row justifyContent="flex-start">
-          <Col sm={4} md={3} paddingLeft={1}>
+          <Col sm={0} md={3} paddingLeft={1}>
             <ButtonUI 
               icon="bars"
               clickHandler={() => {
@@ -43,7 +43,7 @@ const PersonalBrand = () => {
               <Navproject />
             </Sticky>
           </Col>
-          <Col sm={8} md={9} paddingLeft={6} paddingRight={6}>
+          <Col sm={12} md={9} paddingLeft={6} paddingRight={6}>
             <Heading level={1} marginTop={7} marginBottom={3}>
               &lt;personal brand&gt;
             </Heading>
@@ -85,13 +85,7 @@ const PersonalBrand = () => {
             <Paragraph marginBottom={3}>
                 Two triumphs from this project are my final logo design and the social posts I created. Coming up with a suitable logo was the most difficult part of this project, and I am proud of how it turned out. As for the social posts, I think the countdown works well with the system as a whole, and the additions of the typing sounds and the animated logo make the posts seem more professional than silent, static images.
             </Paragraph>
-            <Video
-                  src={socials_mock_up}
-                  alt="Screenshot from Glyphs software with the word 'Bold'"
-                  height={500}
-                  width={800}
-                  className={imageStyles.responsive__image}
-            />
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/wUEJ6rIgwok?si=hquvGCVZ2T5ciC4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <Heading level={1} marginTop={3} marginBottom={0}></Heading>
 
             <Image 

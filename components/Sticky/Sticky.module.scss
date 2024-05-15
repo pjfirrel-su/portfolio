@@ -1,4 +1,7 @@
+@use "../../sass/abstracts/vars";
+
 .sticky {
     position: sticky;
     top: 0;
+    background-color: vars.$color__secondary;
 }

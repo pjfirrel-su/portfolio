@@ -7,8 +7,8 @@ const cx = classnames.bind(styles);
 const ButtonUI = ({ clickHandler, icon }) => {
     const ButtonUIClasses = cx({
         btnui: true, 
-        menu: icon === "bars",
-        close: icon === "close" 
+        menu: icon === "menu",
+        close: icon === "x" 
     });
 
     return (

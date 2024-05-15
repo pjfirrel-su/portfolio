@@ -1,0 +1,13 @@
+@use "../../sass/abstracts/vars";
+
+.row {
+    background-color: vars.$color__secondary;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    z-index: 10000;
+    padding-bottom: 3rem;
+}
+.bars {
+    padding-bottom: 10rem;
+}
